@@ -39,9 +39,7 @@ class _WorkspaceState extends State<Workspace> {
         title: 'Introducao a Programacao - Funcoes e Variaveis',
       ),
       body: Card(
-        color:
-            isHovered ? Color(0xFF131516).withOpacity(0.1) : Color(0xFF131516),
-        // color: const Color(0xFF131516),
+        color: Colors.transparent,
         margin: EdgeInsets.all(8),
         child: Padding(
           padding: EdgeInsets.zero,
