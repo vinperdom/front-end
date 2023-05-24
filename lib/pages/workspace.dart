@@ -14,9 +14,8 @@ class Workspace extends StatefulWidget {
 class _WorkspaceState extends State<Workspace> {
   double leftWidth = 300.0; // Initial width of the left element
   double rightWidth = 300.0; // Initial width of the right element
-  double dragSpeedFactor = 0.4; // Drag speed factor
   Offset mousePosition = Offset.zero; // Mouse position during dragging
-  double snapDistance = 400.0; // Distance from center to trigger snap
+  double snapDistance = 300.0; // Distance from center to trigger snap
   late VideoPlayerController _controller;
   bool isHovered = false;
 
