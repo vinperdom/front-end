@@ -11,19 +11,67 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Color(0xFF131516).withOpacity(0.3),
-      title: Text(
-        title,
-        style: TextStyle(
-          color: Colors.grey[300],
-          fontWeight: FontWeight.bold,
-          fontSize: 18.0,
-        ),
-      ),
-      shape: Border(
-        bottom: BorderSide(
-          color: Color(0xFF252729),
-          width: 1.0,
+      backgroundColor: Colors.grey[800],
+      title: Padding(
+        padding: EdgeInsets.all(16),
+        child: Row(
+          children: [
+            Expanded(
+              child: Container(
+                height: 100,
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/logo.png',
+                      width: 24,
+                      height: 24,
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      'DevNook',
+                      style: TextStyle(
+                        fontFamily: 'Syn',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                height: 100,
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.chevron_left),
+                      SizedBox(width: 32),
+                      Icon(Icons.menu),
+                      SizedBox(width: 8),
+                      Text('Lista de Problemas',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      SizedBox(width: 32),
+                      Icon(Icons.chevron_right),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                height: 100,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Icon(Icons.logout),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

@@ -255,7 +255,6 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
                                 'Python',
                                 style: TextStyle(
                                   fontSize: 14,
-                                  fontWeight: FontWeight.bold,
                                   color: Colors.grey,
                                 ),
                               ),
