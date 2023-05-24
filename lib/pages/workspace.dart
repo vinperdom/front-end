@@ -130,6 +130,9 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
               Card(
                 margin: EdgeInsets.zero,
                 child: GestureDetector(
+                  onPanStart: (details) {
+                    setState(() {});
+                  },
                   onPanEnd: (details) {
                     setState(() {
                       isHovered = false;
@@ -177,9 +180,12 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
                       });
                     },
                     child: Container(
-                      color: isHovered
-                          ? Color(0xFF131516).withOpacity(0.1)
-                          : Color(0xFF131516),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: isHovered
+                            ? Theme.of(context).hoverColor
+                            : Theme.of(context).cardColor,
+                      ),
                       width: 8.0,
                       child: Padding(
                         padding: EdgeInsets.all(0.0),
