@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'pages/workspace.dart';
 import 'globals.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 
