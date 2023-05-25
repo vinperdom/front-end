@@ -32,11 +32,15 @@ class _CodeEditorState extends State<CodeEditor> {
 
   @override
   Widget build(BuildContext context) {
-    return CodeTheme(
-      data: const CodeThemeData(styles: monokaiSublimeTheme),
-      child: CodeField(
-        controller: _codeController!,
-        textStyle: const TextStyle(fontFamily: 'SourceCode'),
+    return Expanded(
+      child: CodeTheme(
+        data: const CodeThemeData(styles: monokaiSublimeTheme),
+        child: CodeField(
+          controller: _codeController!,
+          textStyle: const TextStyle(fontFamily: 'SourceCode'),
+          background: Theme.of(context).cardColor,
+          lineNumberStyle: const LineNumberStyle(margin: 16),
+        ),
       ),
     );
   }

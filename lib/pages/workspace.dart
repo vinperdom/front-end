@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:front/widgets/card_header.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_highlight/flutter_highlight.dart';
 import 'package:flutter_highlight/themes/github.dart';
@@ -221,70 +222,13 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
               ),
               Expanded(
                 flex: rightWidth.toInt(),
-                child: Container(
-                  child: Center(
-                    child: Card(
-                      margin: EdgeInsets.zero,
-                      color: const Color(0xFF131516),
-                      child: Column(children: [
-                        Container(
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF252729),
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(6.0),
-                              topRight: Radius.circular(6.0),
-                            ),
-                          ),
-                          padding: const EdgeInsets.only(
-                            left: 16.0,
-                            top: 2.0,
-                            right: 16.0,
-                            bottom: 2.0,
-                          ),
-                          child: Row(
-                            children: [
-                              Image.asset(
-                                'assets/a.png', // Replace with your image asset path
-                                width:
-                                    16.0, // Set the desired width of the image
-                                height:
-                                    16.0, // Set the desired height of the image
-                              ),
-                              SizedBox(width: 8.0),
-                              Text(
-                                'Python',
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: EdgeInsets.all(24.0),
-                            child: CodeEditor(),
-
-                            //TextField(
-                            //  decoration: InputDecoration(
-                            //    hintText: 'Python code',
-                            //    border: InputBorder.none,
-                            //  ),
-                            //  keyboardType: TextInputType.multiline,
-                            //  textAlignVertical: TextAlignVertical.top,
-                            //  expands: true,
-                            //  maxLines: null,
-                            //  style: TextStyle(fontSize: 16),
-                            //  onChanged: (value) {
-                            //    setState(() {});
-                            //  },
-                            //),
-                          ),
-                        ),
-                      ]),
-                    ),
+                child: Card(
+                  margin: EdgeInsets.zero,
+                  child: Column(
+                    children: [
+                      CardHeader(),
+                      CodeEditor(),
+                    ],
                   ),
                 ),
               ),
