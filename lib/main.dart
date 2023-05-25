@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'pages/workspace.dart';
-import 'globals.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() {
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: Globals.title,
+      title: 'DevNook',
       theme: appTheme,
       home: const Workspace(),
     );

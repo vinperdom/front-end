@@ -3,6 +3,7 @@ import 'package:video_player/video_player.dart';
 import 'package:flutter_highlight/flutter_highlight.dart';
 import 'package:flutter_highlight/themes/github.dart';
 import '../widgets/header.dart';
+import '../widgets/code_editor.dart';
 
 class Workspace extends StatefulWidget {
   const Workspace({Key? key});
@@ -264,20 +265,22 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
                         Expanded(
                           child: Padding(
                             padding: EdgeInsets.all(24.0),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                hintText: 'Python code',
-                                border: InputBorder.none,
-                              ),
-                              keyboardType: TextInputType.multiline,
-                              textAlignVertical: TextAlignVertical.top,
-                              expands: true,
-                              maxLines: null,
-                              style: TextStyle(fontSize: 16),
-                              onChanged: (value) {
-                                setState(() {});
-                              },
-                            ),
+                            child: CodeEditor(),
+
+                            //TextField(
+                            //  decoration: InputDecoration(
+                            //    hintText: 'Python code',
+                            //    border: InputBorder.none,
+                            //  ),
+                            //  keyboardType: TextInputType.multiline,
+                            //  textAlignVertical: TextAlignVertical.top,
+                            //  expands: true,
+                            //  maxLines: null,
+                            //  style: TextStyle(fontSize: 16),
+                            //  onChanged: (value) {
+                            //    setState(() {});
+                            //  },
+                            //),
                           ),
                         ),
                       ]),

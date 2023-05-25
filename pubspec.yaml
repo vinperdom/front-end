@@ -32,9 +32,11 @@ dependencies:
     sdk: flutter
   video_player: ^2.6.1
   url_strategy: ^0.2.0
-  flutter_highlight: ^0.7.0
+  flutter_highlight:
+    git:
+      url: git://github.com/vinperdom/highlight.dart/tree/master/flutter_highlight.git
   flutter_launcher_icons: "^0.13.1"
-
+  code_text_field: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
