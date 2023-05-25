@@ -4,12 +4,12 @@ class CardHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
+      height: 50,
       decoration: BoxDecoration(
         color: Color(0xFF252729),
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(6.0),
-          topRight: Radius.circular(6.0),
+          topLeft: Radius.circular(4.0),
+          topRight: Radius.circular(4.0),
         ),
       ),
       padding: const EdgeInsets.only(
@@ -21,20 +21,17 @@ class CardHeader extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            'assets/a.png', // Replace with your image asset path
-            width: 16.0, // Set the desired width of the image
-            height: 16.0, // Set the desired height of the image
+            'assets/a.png',
+            width: 16.0,
+            height: 16.0,
           ),
           SizedBox(width: 8.0),
           Text(
             'Python',
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey,
-            ),
           ),
         ],
       ),
+      margin: EdgeInsets.only(bottom: 8),
     );
   }
 }

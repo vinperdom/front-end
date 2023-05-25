@@ -22,16 +22,39 @@ class AppTheme extends InheritedWidget {
   }
 }
 
+final defaultTextStyle = TextStyle(
+  color: Colors.grey[300],
+  fontFamily: 'FiraCode',
+  fontWeight: FontWeight.bold,
+);
+
+final defaultHeaderTextStyle = defaultTextStyle.copyWith(
+  color: Colors.grey[700],
+  fontFamily: 'FiraCodeBold',
+);
+
 class MyApp extends StatelessWidget {
-  final double margin = 8;
   final ThemeData appTheme = ThemeData(
     primaryColor: Colors.grey,
     canvasColor: const Color(0xFF131516),
     hoverColor: const Color(0xFF343C40),
     cardColor: const Color(0xFF131516),
     textTheme: TextTheme(
-      bodySmall: TextStyle(color: Colors.grey),
-      bodyMedium: TextStyle(color: Colors.grey),
+      displayLarge: defaultHeaderTextStyle,
+      displayMedium: defaultHeaderTextStyle,
+      displaySmall: defaultHeaderTextStyle,
+      headlineLarge: defaultTextStyle,
+      headlineMedium: defaultTextStyle,
+      headlineSmall: defaultTextStyle,
+      titleLarge: defaultHeaderTextStyle,
+      titleMedium: defaultHeaderTextStyle,
+      titleSmall: defaultHeaderTextStyle,
+      bodyLarge: defaultTextStyle,
+      bodyMedium: defaultTextStyle,
+      bodySmall: defaultTextStyle,
+      labelLarge: defaultTextStyle,
+      labelMedium: defaultTextStyle,
+      labelSmall: defaultTextStyle,
     ),
   );
   @override

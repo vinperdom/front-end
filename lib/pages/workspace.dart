@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:front/widgets/card_header.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_highlight/flutter_highlight.dart';
 import 'package:flutter_highlight/themes/github.dart';
 import '../widgets/header.dart';
 import '../widgets/code_editor.dart';
+import '../widgets/card_header.dart';
+import '../widgets/card_bottom.dart';
 
 class Workspace extends StatefulWidget {
   const Workspace({Key? key});
@@ -35,7 +36,6 @@ class _WorkspaceState extends State<Workspace> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF131516),
       appBar: Header(
         title: 'Introducao a Programacao - Funcoes e Variaveis',
       ),
@@ -228,6 +228,7 @@ Ai, Bi, Cj, Dj consist of lower case English letters and digits.
                     children: [
                       CardHeader(),
                       CodeEditor(),
+                      CardBottom(),
                     ],
                   ),
                 ),

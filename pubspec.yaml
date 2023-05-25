@@ -84,7 +84,12 @@ flutter:
     - family: Syn
       fonts:
         - asset: assets/syn.ttf
-
+    - family: FiraCode
+      fonts:
+        - asset: assets/firacode.ttf
+    - family: FiraCodeBold
+      fonts:
+        - asset: assets/firacodebold.ttf
 
 
   # The following line ensures that the Material Icons font is

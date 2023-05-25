@@ -48,15 +48,15 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.chevron_left),
+                      Icon(Icons.chevron_left_rounded),
                       SizedBox(width: 32),
-                      Icon(Icons.menu),
+                      Icon(Icons.menu_rounded),
                       SizedBox(width: 8),
                       Text('Lista de Problemas',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       SizedBox(width: 32),
-                      Icon(Icons.chevron_right),
+                      Icon(Icons.chevron_right_rounded),
                     ],
                   ),
                 ),
@@ -67,7 +67,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
                 height: 100,
                 child: Align(
                   alignment: Alignment.centerRight,
-                  child: Icon(Icons.logout),
+                  child: Icon(Icons.logout_rounded),
                 ),
               ),
             ),

@@ -37,9 +37,14 @@ class _CodeEditorState extends State<CodeEditor> {
         data: const CodeThemeData(styles: monokaiSublimeTheme),
         child: CodeField(
           controller: _codeController!,
-          textStyle: const TextStyle(fontFamily: 'SourceCode'),
+          textStyle: const TextStyle(
+              fontFamily: 'FiraCode', fontWeight: FontWeight.bold),
           background: Theme.of(context).cardColor,
-          lineNumberStyle: const LineNumberStyle(margin: 16),
+          lineNumberStyle: const LineNumberStyle(
+            margin: 16,
+            textStyle: const TextStyle(
+                fontFamily: 'FiraCode', fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );
