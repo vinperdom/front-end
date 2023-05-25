@@ -68,10 +68,11 @@ packages:
   code_text_field:
     dependency: "direct main"
     description:
-      name: code_text_field
-      sha256: "0cbffbb2932cf82e1d022996388041de3493a476acad3fbb13e5917cac0fc5f2"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: "0482fe35580b7d9befd0808d1fc32cb9f64d3a1a"
+      url: "https://github.com/vinperdom/code_field.git"
+    source: git
     version: "1.1.0"
   collection:
     dependency: transitive
@@ -127,12 +128,13 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_highlight:
-    dependency: "direct main"
+    dependency: transitive
     description:
-      name: flutter_highlight
-      sha256: "7b96333867aa07e122e245c033b8ad622e4e3a42a1a2372cbb098a2541d8782c"
-      url: "https://pub.dev"
-    source: hosted
+      path: flutter_highlight
+      ref: HEAD
+      resolved-ref: "6ca53b043af9473e2111b2de9baaf9522935ff1a"
+      url: "https://github.com/vinperdom/highlight.dart.git"
+    source: git
     version: "0.7.0"
   flutter_launcher_icons:
     dependency: "direct main"

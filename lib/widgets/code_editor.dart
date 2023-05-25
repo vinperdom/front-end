@@ -16,7 +16,7 @@ class _CodeEditorState extends State<CodeEditor> {
   @override
   void initState() {
     super.initState();
-    final source = "\n\n\n";
+    final source = "x = 'asrt'\nprint('arsta')\nprint(x)\n";
     // Instantiate the CodeController
     _codeController = CodeController(
       text: source,
